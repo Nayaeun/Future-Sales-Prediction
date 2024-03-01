@@ -1,7 +1,7 @@
 # Future-Sales-Prediction
 
 ## Introduction
-In the realm of forecasting vital for finance, sales, and logistics, this project centers on the strategic application of time series analysis to predict future sales. Operating on a dataset marked by inherent seasonality, the project employs a spectrum of forecasting models—ranging from fundamental, like Holt-Winters, to sophisticated, such as ARIMA and SARIMA. Evaluation metrics like Mean Squared Error, AIC, and BIC guide model assessment. Preceding modeling, diligent preprocessing unfolds with stationarity testing, differencing, and adept feature selection. The overarching aim is to pinpoint the model adept at capturing dataset nuances and delivering precise forecasts. This project's outcomes promise valuable insights into the nuanced world of time series analysis and the pivotal considerations in model selection.
+In the dynamic realm of retail, the ability to make precise sales predictions can be a game-changer for success. Time series forecasting, a potent technique leveraging historical data with a time component, serves as the key to unlocking insights that drive informed decisions. Picture the transformative impact of anticipating customer demand, optimizing inventory, and strategically planning promotions. This project led me to undertake a comprehensive time series forecasting project, delving into the rich dataset of any store.
 
 ## Objectives
 1) To employ forecasting models ranging from simple, like Holt-Winters, to more complex ones such as ARIMA and SARIMA.
@@ -10,17 +10,12 @@ In the realm of forecasting vital for finance, sales, and logistics, this projec
 4)
 
 ## Methodology
-### Data Collection and Preprocessing:
-* 
-
-### Feature Engineering and Selection:
-* 
-
-### Model Selection and Training:
-*
-
-### Model Evaluation
-* 
+* Dataset Description: The dataset contains 913,000 sales observations over a five-year period, with variables including date, store, item, and sales.
+* Data Preprocessing: The dataset is reshaped to a time series structure, with additional columns for year and month.
+* Exploratory Data Analysis (EDA): Time series visualization, autocorrelation analysis, correlation matrix examination, and stationarity testing are performed to understand the dataset's characteristics.
+* Time Series Decomposition: Seasonal and Trend decomposition using Loess (STL) is applied to manage seasonality in the data effectively.
+* Modeling: Various models, including Holt-Winters, basic forecasting methods, multiple linear regression, and ARIMA/SARIMA, are explored and evaluated.
+* Final Model Selection: The SARIMA model is identified as the most effective based on MSE and comprehensive analysis.
 
 
 ## Results
