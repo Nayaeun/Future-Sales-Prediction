@@ -1,25 +1,23 @@
 # Future-Sales-Prediction
 
 ## Introduction
-In the dynamic realm of retail, the ability to make precise sales predictions can be a game-changer for success. Time series forecasting, a potent technique leveraging historical data with a time component, serves as the key to unlocking insights that drive informed decisions. Picture the transformative impact of anticipating customer demand, optimizing inventory, and strategically planning promotions. This project led me to undertake a comprehensive time series forecasting project, delving into the rich dataset of any store.
+
+The vast landscape of time-series data analysis offers a multitude of insights into trends, patterns, and predictive modeling. In this study, our primary objective was to unravel the intricate sales dynamics embedded within a comprehensive dataset spanning from January 1, 2013, to December 31, 2017. The rich dataset encapsulates the sales records of 50 distinct items across 10 different stores, providing a fertile ground for exploring the temporal intricacies of sales behavior.
 
 ## Objectives
-1) To employ forecasting models ranging from simple, like Holt-Winters, to more complex ones such as ARIMA and SARIMA.
-2) for accurate forecasting 
-3)
-4)
+
+The core objective of this study was to employ advanced time-series analysis and modeling techniques to uncover the underlying patterns and dependencies in the sales data. Specific goals included the transformation of the original dataset into a time-series format, exploration of autocorrelations, testing for stationarity, and the development of predictive models. The overarching aim was to derive actionable insights and construct a robust forecasting model capable of offering valuable predictions for future sales trends.
 
 ## Methodology
-* Dataset Description: The dataset contains 913,000 sales observations over a five-year period, with variables including date, store, item, and sales.
-* Data Preprocessing: The dataset is reshaped to a time series structure, with additional columns for year and month.
-* Exploratory Data Analysis (EDA): Time series visualization, autocorrelation analysis, correlation matrix examination, and stationarity testing are performed to understand the dataset's characteristics.
-* Time Series Decomposition: Seasonal and Trend decomposition using Loess (STL) is applied to manage seasonality in the data effectively.
-* Modeling: Various models, including Holt-Winters, basic forecasting methods, multiple linear regression, and ARIMA/SARIMA, are explored and evaluated.
-* Final Model Selection: The SARIMA model is identified as the most effective based on MSE and comprehensive analysis.
 
+The methodology commenced with the meticulous reshaping of the dataset, focusing on temporal structures and seasonality. Through a step-by-step process involving date formatting, data grouping, and column addition, the dataset evolved into a refined time-series representation. Subsequent autocorrelation analyses, stationarity tests, and differencing techniques were applied to enhance the dataset's suitability for time-series forecasting models.
+
+The arsenal of models included the Holt-Winters method, basic forecasting techniques, and a multiple linear regression model. The evaluation of each model involved performance metrics such as Mean Squared Error (MSE) and visual checks on predicted versus actual values. The analysis then delved into the realm of ARIMA and SARIMA models, with a detailed exploration of model order selection, validation through residual analysis, and a comparison between ARIMA and SARIMA.
 
 ## Results
-* 
+
+The culminating point of the study rested on the selection of the SARIMA model as the final and most proficient forecasting tool. The SARIMA model exhibited the lowest MSE among all contenders, emphasizing its superior predictive accuracy. A 100-step ahead prediction visually showcased the model's robust performance, aligning closely with the test data in the initial phase. Nevertheless, as the forecast extended into the future, inherent uncertainties led to a flattening of predictions, a common challenge in long-term forecasting with time-series data.
 
 ## Conclusion
 
+In conclusion, our journey through extensive analysis and modeling unveiled the SARIMA model as the optimal choice for forecasting sales trends in the given dataset. While celebrating the model's strengths, it is crucial to acknowledge its limitations, notably in long-term forecasting where uncertainty amplifies. Moreover, the study hinted at the potential of unexplored non-linear relationships in the data, paving the way for future investigations.
