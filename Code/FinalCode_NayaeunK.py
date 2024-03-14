@@ -38,7 +38,8 @@ warnings.filterwarnings('ignore')
 #%% 6-a. Pre-processing dataset: Dataset cleaning for missing observation. You must follow the data cleaning techniques for time series dataset.
 
 # Import train and test dataset
-data = pd.read_csv('train.csv', parse_dates=['date'])
+url = 'https://raw.githubusercontent.com/Nayaeun/Future-Sales-Prediction/main/Data/train.csv'
+data = pd.read_csv(url, parse_dates=['date'])
 #data['date'] = pd.to_datetime(data['date'])
 
 # Check dataset
